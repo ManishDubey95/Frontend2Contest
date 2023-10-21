@@ -1,68 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend2-contest</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="nav">
-      <div class="dropdown">
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/006/991/465/original/menu-bar-icon-which-is-suitable-for-commercial-work-and-easily-modify-or-edit-it-vector.jpg"
-          alt="bar"
-        />
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excalidraw</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="./Assest/icon.svg">
+</head>
+<body>
+    <div id="root">
+        <div class="excalidraw-app" style="height: 100%;">
+            <div class="excalidrawContainer">
+                <div class="fixedSideContainer d-flex align-items-center">
+                    <div class="appMenuTop ilandAppToolBar d-flex p-2">
+                        <div class="app-menu-left">
+                            <span class="material-symbols-outlined">menu</span>
+                        </div>
+                    </div>
+                    <section class="shapeSection">
+                        <div class="stack-horizontalToolBarContainer">
+                            <div class="ilandAppToolBar d-flex p-2">
+                                <div class="stackHorizontal d-flex gap-3">
+                                    <!-- Add your ToolIcon__icon elements here -->
+                                    <div class="ToolIcon__icon">
+                                        <svg aria-hidden="true" focusable="false" role="img" viewBox="0 0 20 20" class="" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                            <g stroke-width="1.25">
+                                                <path d="M13.542 8.542H6.458a2.5 2.5 0 0 0-2.5 2.5v3.75a2.5 2.5 0 0 0 2.5 2.5h7.084a2.5 2.5 0 0 0 2.5-2.5v-3.75a2.5 2.5 0 0 0-2.5-2.5Z"></path>
+                                                <path d="M10 13.958a1.042 1.042 0 1 0 0-2.083 1.042 1.042 0 0 0 0 2.083Z"></path>
+                                                <path d="M6.667 8.333V5.417C6.667 3.806 8.159 2.5 10 2.5c1.841 0 3.333 1.306 3.333 2.917v2.916"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <!-- Add other ToolIcon__icon elements as needed -->
+                                    <div class="vertical-line "></div>
+                                    <div class="ToolIcon__icon"><svg aria-hidden="true" focusable="false" role="img" viewBox="0 0 24 24" class="" fill="none" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="1.25"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 13v-7.5a1.5 1.5 0 0 1 3 0v6.5"></path><path d="M11 5.5v-2a1.5 1.5 0 1 1 3 0v8.5"></path><path d="M14 5.5a1.5 1.5 0 0 1 3 0v6.5"></path><path d="M17 7.5a1.5 1.5 0 0 1 3 0v8.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7a69.74 69.74 0 0 1 -.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47"></path></g></svg></div>
+                                    <div class="ToolIcon__icon"><svg aria-hidden="true" focusable="false" role="img" viewBox="0 0 22 22" class="" fill="none" stroke-width="1.25"><g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M6 6l4.153 11.793a0.365 .365 0 0 0 .331 .207a0.366 .366 0 0 0 .332 -.207l2.184 -4.793l4.787 -1.994a0.355 .355 0 0 0 .213 -.323a0.355 .355 0 0 0 -.213 -.323l-11.787 -4.36z"></path><path d="M13.5 13.5l4.5 4.5"></path></g></svg><span class="ToolIcon__keybinding">1</span></div>
+                                    <div class="ToolIcon__icon"><svg aria-hidden="true" focusable="false" role="img" viewBox="0 0 24 24" class="" fill="none" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="1.5"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="4" y="4" width="16" height="16" rx="2"></rect></g></svg><span class="ToolIcon__keybinding">2</span></div>
+                                    <div class="ToolIcon__icon"><svg aria-hidden="true" focusable="false" role="img" viewBox="0 0 24 24" class="" fill="none" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="1.5"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10.5 20.4l-6.9 -6.9c-.781 -.781 -.781 -2.219 0 -3l6.9 -6.9c.781 -.781 2.219 -.781 3 0l6.9 6.9c.781 .781 .781 2.219 0 3l-6.9 6.9c-.781 .781 -2.219 .781 -3 0z"></path></g></svg><span class="ToolIcon__keybinding">3</span></div>
+                                    <div class="ToolIcon__icon"><svg aria-hidden="true" focusable="false" role="img" viewBox="0 0 24 24" class="" fill="none" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="1.5"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="9"></circle></g></svg><span class="ToolIcon__keybinding">4</span></div>
+                                    <div class="ToolIcon__icon"><svg aria-hidden="true" focusable="false" role="img" viewBox="0 0 24 24" class="" fill="none" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="1.5"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><line x1="5" y1="12" x2="19" y2="12"></line><line x1="15" y1="16" x2="19" y2="12"></line><line x1="15" y1="8" x2="19" y2="12"></line></g></svg><span class="ToolIcon__keybinding">5</span></div>
+                                    <div class="ToolIcon__icon"><svg aria-hidden="true" focusable="false" role="img" viewBox="0 0 20 20" class="" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4.167 10h11.666" stroke-width="1.5"></path></svg><span class="ToolIcon__keybinding">6</span></div>
+                                    <div class="ToolIcon__icon"><svg aria-hidden="true" focusable="false" role="img" viewBox="0 0 20 20" class="" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="1.25"><path clip-rule="evenodd" d="m7.643 15.69 7.774-7.773a2.357 2.357 0 1 0-3.334-3.334L4.31 12.357a3.333 3.333 0 0 0-.977 2.357v1.953h1.953c.884 0 1.732-.352 2.357-.977Z"></path><path d="m11.25 5.417 3.333 3.333"></path></g></svg><span class="ToolIcon__keybinding">7</span></div>
+                                    <div class="ToolIcon__icon"><svg aria-hidden="true" focusable="false" role="img" viewBox="0 0 24 24" class="" fill="none" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="1.5"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><line x1="4" y1="20" x2="7" y2="20"></line><line x1="14" y1="20" x2="21" y2="20"></line><line x1="6.9" y1="15" x2="13.8" y2="15"></line><line x1="10.2" y1="6.3" x2="16" y2="20"></line><polyline points="5 20 11 4 13 4 20 20"></polyline></g></svg><span class="ToolIcon__keybinding">8</span></div>
+                                    <div class="ToolIcon__icon"><svg aria-hidden="true" focusable="false" role="img" viewBox="0 0 20 20" class="" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="1.25"><path d="M12.5 6.667h.01"></path><path d="M4.91 2.625h10.18a2.284 2.284 0 0 1 2.285 2.284v10.182a2.284 2.284 0 0 1-2.284 2.284H4.909a2.284 2.284 0 0 1-2.284-2.284V4.909a2.284 2.284 0 0 1 2.284-2.284Z"></path><path d="m3.333 12.5 3.334-3.333c.773-.745 1.726-.745 2.5 0l4.166 4.166"></path><path d="m11.667 11.667.833-.834c.774-.744 1.726-.744 2.5 0l1.667 1.667"></path></g></svg><span class="ToolIcon__keybinding">9</span></div>
+                                    <div class="ToolIcon__icon"><svg aria-hidden="true" focusable="false" role="img" viewBox="0 0 24 24" class="" fill="none" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="1.5"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M19 20h-10.5l-4.21 -4.3a1 1 0 0 1 0 -1.41l10 -10a1 1 0 0 1 1.41 0l5 5a1 1 0 0 1 0 1.41l-9.2 9.3"></path><path d="M18 13.3l-6.3 -6.3"></path></g></svg><span class="ToolIcon__keybinding"> 10</span></div>
+                                    <div class="vertical-line "></div>
+                                    <div class="d-flex px-1">
+                                    <div class="ToolIcon__icon">
+                                        <svg aria-hidden="true" focusable="false" role="img" viewBox="0 0 24 24" class="" fill="none" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="1.5"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 3l-4 7h8z"></path><path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path><path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path></g></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </section>
+                    
+                    <div class="right d-flex align-items-center">
+                        <button class="btn join p-10 border round">
+                            <div class="ToolIcon__icon">
+                                <svg aria-hidden="true" focusable="false" role="img" viewBox="0 0 24 24" class="" fill="none" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                    <g stroke-width="1.5">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                        <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="secLeft border rounded d-flex align-items-center">
+                            <div class="ToolIcon__icon">
+                                <svg aria-hidden="true" focusable="false" role="img" viewBox="0 0 24 24" class="" fill="none" stroke-width="2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                    <g stroke-width="1.5">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
+                                        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
+                                        <line x1="3" y1="6" x2="3" y2="19"></line>
+                                        <line x1="12" y1="6" x2="12" y2="19"></line>
+                                        <line x1="21" y1="6" x2="21" y2="19"></line>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="sidebar-trigger__label">Library</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="HintViewer"><span>To move canvas, hold the mouse wheel or spacebar while dragging, or use the hand tool</span></div>
+            </div>
 
-      <div id="tool-box">
-        <div><img src="data:image/png;base64,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" alt="icn"></div>
-        <div class="line"></div>
-        <div class="hv"><img src="https://www.shutterstock.com/image-vector/hand-icon-vector-stop-symbol-260nw-1793958835.jpg" alt="icn"></div>
-        <div class="hv"><img src="https://patchion.com/899-medium_default/arrow-cursor-default.jpg" alt="icn"></div>
-        <div class="hv"><img src="https://i.pinimg.com/1200x/5e/ca/11/5eca11cdbd6b196d22bedea2f61dfbad.jpg" alt="icn"></div>
-        <div class="hv"><img src="https://us.123rf.com/450wm/get4net/get4net1711/get4net171101447/90570331-rhombus-same-length-sides.jpg?ver=6" alt="icn"></div>
-        <div class="hv"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-circle-outline-512.png" alt="icn"></div>
-        <div class="hv"><img src="https://cdn-icons-png.flaticon.com/512/664/664866.png" alt="icn"></div>
-        <div class="hv"><img src="https://static.thenounproject.com/png/331695-200.png" alt="icn"></div>
-        <div class="hv"><img src="https://previews.123rf.com/images/photoart23d/photoart23d1903/photoart23d190300391/124799446-pencil-symbol-icon-black-simple-outline-isolated-vector-illustration.jpg" alt="icn"></div>
-        <div class="hv"><img src="data:image/png;base64,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" alt="icn"></div>
-        <div class="hv"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwfttJp2Cq-Es0lgxLdJeN5Ha4-YudSX8C3vQLjZtkvzZXBmO6cI8pilpy07plD3vPk8E&usqp=CAU" alt="icn"></div>
-        <div class="hv"><img src="https://www.creativefabrica.com/wp-content/uploads/2018/11/Eraser-icon-by-rudezstudio-2-580x386.jpg" alt="icn"></div>
-        <div class="line"></div>
-        <div class="hv"><img src="https://cdn-icons-png.flaticon.com/512/2413/2413271.png" alt="icn"></div>
-      </div>
-
-      <div id="live">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="1.5em"
-          viewBox="0 0 448 512"
-        >
-          <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-          <style>
-            svg {
-              fill: #ffffff;
-            }
-          </style>
-          <path
-            d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"
-          />
-        </svg>
-      </div>
-
-      <div id="library" class="hv">
-        <img src="https://cdn-icons-png.flaticon.com/512/864/864685.png" alt="img">
-         <p>Library</p>  
-      </div>
+             <!-- Add a canvas element for drawing -->
+            <canvas id="canvas"></canvas>
+        </div>
     </div>
 
-    <script src="./script.js"></script>
-  </body>
+    <footer class="mb-5">
+        <section class="d-flex justify-content-between align-items-center">
+          <div class="d-flex" id="bottom-left">
+            <div class="d-flex zoom justify-content-between align-items-center border rounded-4 p-2 mx-3 me-5 ">
+                <span class="material-symbols-outlined zoom-action" data-action="out">remove</span>
+              <div class="vertical-line"></div>
+              <span id="zoomLevel" >100%</span>
+              <div class="vertical-line"></div>
+              <span class="material-symbols-outlined zoom-action" data-action="in">add</span>
+            </div>
+
+            <div class="d-flex zoom justify-content-start align-items-center border rounded-4 p-1 ">
+                <span class="material-symbols-outlined">undo</span>
+                <div class="vertical-line"></div>
+                <span class="material-symbols-outlined">redo</span>
+            </div>
+          </div>
+          <div id="bottom-right">
+            <span class="material-symbols-outlined veri-color">verified_user</span>
+            <span class="material-symbols-outlined que-icon">help</span>
+          </div>
+        </section>
+      </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
 </html>
